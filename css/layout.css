@@ -1,0 +1,59 @@
+* {
+    --white: #FFFFFF;
+    --blue: #084EFF;
+    --red: #E23232;
+    --black: #141415;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+.radar {
+    width: 100%;
+}
+
+.radar-inner {
+    position: relative;
+    height: 0;
+    border: none;
+}
+
+.radar-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.radar-1-1 {
+    padding-top: 49%;
+}
+
+.radar-spin {
+    width: 4000px;
+    height: 4000px;
+    border-radius: 50%;
+    background-image: url("../images/radar-light.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    animation: spin 2s linear infinite;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes spin {
+            0% {transform: rotate(-360deg);}
+            100% {transform: rotate(0deg);}
+}

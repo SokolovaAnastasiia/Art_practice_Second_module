@@ -1,0 +1,17 @@
+<svg width="1679" height="844" viewBox="0 0 1679 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1679" height="844">
+<rect x="0.173828" y="0.639648" width="1678.37" height="842.504" fill="#141415"/>
+</mask>
+<g mask="url(#mask0)">
+<circle cx="837.412" cy="424.748" r="615.933" stroke="#084EFF" stroke-width="2"/>
+<circle cx="837.411" cy="404.839" r="479.991" stroke="#084EFF" stroke-width="2"/>
+<circle cx="837.414" cy="410.078" r="338.725" stroke="#084EFF" stroke-width="2"/>
+<circle cx="837.411" cy="410.078" r="188.72" stroke="#084EFF" stroke-width="2"/>
+<path d="M1581.66 398.553C1581.66 809.59 1248.45 1142.8 837.416 1142.8C426.379 1142.8 93.168 809.59 93.168 398.553C93.168 -12.484 426.379 -345.695 837.416 -345.695C1248.45 -345.695 1581.66 -12.484 1581.66 398.553Z" stroke="#084EFF" stroke-width="2"/>
+<path d="M1725.11 398.554C1725.11 889.536 1327.09 1287.56 836.103 1287.56C345.121 1287.56 -52.8984 889.536 -52.8984 398.554C-52.8984 -92.4286 345.121 -490.448 836.103 -490.448C1327.09 -490.448 1725.11 -92.4286 1725.11 398.554Z" stroke="#084EFF" stroke-width="2"/>
+<line x1="838.414" y1="-204.137" x2="838.414" y2="1034.99" stroke="#084EFF" stroke-width="2"/>
+<line x1="1685.16" y1="416.425" x2="4.33276" y2="416.425" stroke="#084EFF" stroke-width="2"/>
+<line x1="1669.66" y1="-99.3898" x2="68.3696" y2="895.352" stroke="#084EFF" stroke-width="2"/>
+<line y1="-1" x2="1885.11" y2="-1" transform="matrix(0.849441 0.527684 0.527684 -0.849441 36.7656 -82.2939)" stroke="#084EFF" stroke-width="2"/>
+</g>
+</svg>
