@@ -5,8 +5,11 @@
     --black: #141415;
 }
 
+
+
 body {
     background-color: var(--blue);
+    height: 3000px;
 }
 
 .radar {
@@ -47,13 +50,86 @@ body {
     animation: spin 2s linear infinite;
 }
 
-img {
+.radar-img {
     width: 100%;
     position: absolute;
     top: 0;
 }
+/*
+.tape {
+    margin-top: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tape img {
+    display: block;
+    position: absolute;
+    animation: row-move 10s linear infinite;
+}
+    Ширина img 5218px*/
+.tape {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    overflow-x: hidden;
+}
+
+.tape div {
+    position: absolute;
+}
+
+.printer {
+    position: absolute;
+    left: 290px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.printer img {
+    position: absolute;
+}
+
+#print {
+    animation: print 0.4s infinite alternate linear;
+}
+
+.tickets {
+    top: 50px;
+}
+
+.tickets img {
+    position: absolute;
+}
+
+#red-tape {
+    animation: row-move 20s infinite linear;
+}
+
+#white-tape {
+    top: 314px;
+    animation: row-move 20s infinite linear reverse;
+}
+
+#black-tape {
+    top: 630px;
+    animation: row-move 20s infinite linear;
+}
+
+@keyframes print {
+    0% {top: 20px;}
+    100% {top: 300px;}
+}
+
 
 @keyframes spin {
-            0% {transform: rotate(-360deg);}
-            100% {transform: rotate(0deg);}
+    0% {transform: rotate(-360deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+@keyframes row-move {
+    0% {right: -2332px;}
+    100% {right: -7550px;}
 }
