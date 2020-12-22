@@ -1,0 +1,8 @@
+@media all and (max-width: 768px) {
+	.radar {
+        display: none;
+    }
+    .radar-img {
+        display: none;
+    }
+}

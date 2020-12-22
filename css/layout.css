@@ -9,7 +9,6 @@
 
 body {
     background-color: var(--blue);
-    height: 3000px;
 }
 
 .radar {
@@ -55,19 +54,8 @@ body {
     position: absolute;
     top: 0;
 }
-/*
-.tape {
-    margin-top: 30px;
-    width: 100%;
-    overflow: hidden;
-}
 
-.tape img {
-    display: block;
-    position: absolute;
-    animation: row-move 10s linear infinite;
-}
-    Ширина img 5218px*/
+
 .tape {
     position: relative;
     width: 100%;
@@ -84,7 +72,7 @@ body {
     left: 290px;
     display: flex;
     justify-content: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .printer img {
@@ -104,17 +92,57 @@ body {
 }
 
 #red-tape {
-    animation: row-move 20s infinite linear;
+    animation: row-move 25s infinite linear;
 }
 
 #white-tape {
-    top: 314px;
-    animation: row-move 20s infinite linear reverse;
+    top: 316px;
+    animation: row-move 25s infinite linear reverse;
 }
 
 #black-tape {
     top: 630px;
-    animation: row-move 20s infinite linear;
+    animation: row-move 25s infinite linear;
+}
+
+#blank {
+    top: 1px;
+    background-color: white;
+    height: 271px;
+    width: 300px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#blank img {
+    position: absolute;
+    top: 1px;
+    /* animation: row-move 20s infinite linear; */
+}
+
+
+
+footer {
+    width: 100%;
+    height: 183px;
+    position: relative;
+    background-color: var(--blue);
+    overflow: hidden;
+}
+
+footer img {
+    position: absolute;
+}
+
+#footer-light1 {
+    animation: line-move 3s infinite linear;
+    left: -322px;
+}
+
+#footer-light2 {
+    animation: line-move 3s infinite linear;
+    animation-delay: 1.5s;
+    left: -322px;
 }
 
 @keyframes print {
@@ -132,4 +160,9 @@ body {
 @keyframes row-move {
     0% {right: -2332px;}
     100% {right: -7550px;}
+}
+
+@keyframes line-move {
+    0% {left: -322px;}
+    100% {left: 2000px;}
 }
