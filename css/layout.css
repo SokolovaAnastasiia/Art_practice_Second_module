@@ -11,6 +11,7 @@ body {
     background-color: var(--blue);
 }
 
+/* desctop */
 .radar {
     width: 100%;
 }
@@ -52,9 +53,54 @@ body {
 .radar-img {
     width: 100%;
     position: absolute;
+    top: -5px;
+}
+
+/* mobile */
+
+.radar-mobile {
+    display: none;
+    width: 100%;
+}
+
+.radar-inner-mobile {
+    position: relative;
+    height: 0;
+    border: none;
+}
+
+.radar-1-1-mobile {
+    padding-top: 217%;
+}
+
+
+.radar-content-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--black);
+}
+
+.radar-content-mobile img {
+    position: absolute;
+    width: 100%;
+    top: 750px;
+    left: 2px;
+    animation: line-move-mobile 2.5s linear infinite;
+}
+
+
+.radar-mobile-img {
+    display: none;
+    width: 100%;
+    position: absolute;
     top: 0;
 }
 
+/* desctop */
 
 .tape {
     position: relative;
@@ -120,7 +166,85 @@ body {
     /* animation: row-move 20s infinite linear; */
 }
 
+/* tablet */
 
+.tape-tablet-container {
+    display: none;
+    width: 100%;
+}
+
+.tape-tablet-inner {
+    position: relative;
+    height: 0;
+    border: none;
+}
+
+.tape-1-1-tablet {
+    padding-top: 298%;
+}
+
+.tape-tablet {
+    /* height: 3050px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tape-tablet div {
+    flex-basis: 42.44%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.tape-tablet div img{
+    width: 100%;
+    position: absolute;
+    animation: row-move-tablet 20s infinite linear reverse;
+}
+
+#right-tape img {
+    animation: row-move-tablet 20s infinite linear;
+}
+
+/* mobile */
+
+.tape-mobile-container {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tape-mobile-inner {
+    position: relative;
+    height: 0;
+    border: none;
+}
+
+.tape-1-1-mobile {
+    padding-top: 1098%;
+}
+
+.tape-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tape-mobile img {
+    width: 100%;
+    position: absolute;
+    animation: row-move-mobile 10s infinite linear;
+}
 
 footer {
     width: 100%;
@@ -162,7 +286,23 @@ footer img {
     100% {right: -7550px;}
 }
 
+@keyframes row-move-tablet {
+    0% {top: 0%}
+    100% {top: -395%}
+}
+
+@keyframes row-move-mobile {
+    0% {top: 0%;}
+    100% {top: -253%;}
+}
+
 @keyframes line-move {
     0% {left: -322px;}
     100% {left: 2000px;}
+}
+
+@keyframes line-move-mobile {
+    0% {top: 750px;}
+    100% {top: -200px;}
+
 }

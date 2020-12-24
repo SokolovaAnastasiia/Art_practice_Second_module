@@ -1,8 +1,39 @@
+@media all and (max-width: 1024px) {
+    .tape {
+        display: none;
+    }
+    .tape-tablet-container {
+        display: block;
+    }
+}
+
+
 @media all and (max-width: 768px) {
-	.radar {
+
+}
+
+@media all and (max-width: 375px) {
+    .radar {
         display: none;
     }
     .radar-img {
         display: none;
     }
+    .radar-mobile {
+        display: block;
+    }
+    .radar-mobile-img {
+        display: block;
+    }
+    .tape-tablet-container {
+        display: none;
+    }
+    .tape-mobile-container {
+        display: block;
+    }
+}
+
+
+@media all and (max-width: 320px) {
+
 }
