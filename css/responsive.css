@@ -8,9 +8,13 @@
 }
 
 
-@media all and (max-width: 768px) {
-
+@media all and (max-width: 500px) {
+    #footer-text {
+        height: 5%;
+    }
 }
+
+
 
 @media all and (max-width: 375px) {
     .radar {
@@ -31,6 +35,7 @@
     .tape-mobile-container {
         display: block;
     }
+
 }
 
 
