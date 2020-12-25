@@ -129,6 +129,11 @@ body {
     animation: print 0.4s infinite alternate linear;
 }
 
+.printer-tablet {
+    position: absolute;
+    top: 100px;
+}
+
 .tickets {
     top: 50px;
 }
